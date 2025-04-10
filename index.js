@@ -10,7 +10,7 @@ app.get('/',(req,res)=>{
     res.json("Welcome To VargatriaPattika Api! :D");
 });
 app.use("/users", userRouter)
-const URL=process.env.CONNECTION_URL;
+const URL='mongodb+srv://KarthikeyaSrishty:KarthikeyaSrishty@cluster0.g9kov.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(URL,{ dbName: "Nanna" });
 
